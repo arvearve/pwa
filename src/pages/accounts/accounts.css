@@ -1,0 +1,56 @@
+.accounts-top-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5px;
+}
+
+.text-darker-gray {
+  color: var(--darker-gray);
+}
+
+sup {
+  vertical-align: initial;
+  position: relative;
+  top: -3px;
+  font-size: 14px;
+}
+
+.arrow-up {
+  transform: rotateZ(180deg);
+}
+
+#accounts-list {
+  margin-top: 20px;
+}
+
+#accounts-list .account {
+  display: flex;
+  position: relative; /*for ripple*/
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--lighter-gray);
+}
+
+.account-icon {
+  padding: 20px;
+  border-radius: 10px;
+}
+.account-icon.cherry {
+  background-color: var(--cherry);
+}
+.account-icon.light-blue {
+  background-color: var(--light-blue);
+}
+
+.account-details {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.account-name {
+  font-size: 18px;
+}
+.account-value {
+  padding-top: 5px;
+  font-size: 30px;
+}

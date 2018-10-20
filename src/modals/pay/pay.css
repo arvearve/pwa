@@ -1,0 +1,42 @@
+#pay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -64px;
+  position: relative;
+}
+
+#pay-amount {
+  font-size: 60px;
+  letter-spacing: 0.5px;
+  width: 120px;
+  color: var(--orange);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 0;
+}
+#pay-currency {
+  font-size: 60px;
+  color: var(--orange);
+}
+#pay-amount::placeholder {
+  color: var(--orange);
+}
+#pay .pristine {
+  color: var(--dark-gray);
+}
+
+#pay-amount.pristine::placeholder {
+  color: var(--dark-gray);
+}
+
+#pay-send {
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+  right: 30px;
+  justify-content: center;
+  text-align: center;
+  border: 0;
+}

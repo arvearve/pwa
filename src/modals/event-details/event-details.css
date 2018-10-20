@@ -1,0 +1,25 @@
+.event-details-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.event-details-picture {
+  border-radius: 50%;
+}
+
+.event-details-direction.debit {
+  transform: rotateZ(180deg);
+}
+
+#event-details-amount {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.event-details-bottom {
+  padding: 30px;
+  background-color: var(--background);
+}

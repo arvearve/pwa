@@ -1,0 +1,72 @@
+#navbar {
+  background-color: var(--background);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--apps-shell-zindex);
+}
+#navbar-inner {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+#navbar-stripe {
+  height: 4px;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+#navbar-stripe .color1 {
+  background-color: #1b8347;
+}
+#navbar-stripe .color2 {
+  background-color: #359933;
+}
+#navbar-stripe .color3 {
+  background-color: #2ea34e;
+}
+#navbar-stripe .color4 {
+  background-color: #8dc560;
+}
+#navbar-stripe .color5 {
+  background-color: #16b8af;
+}
+#navbar-stripe .color6 {
+  background-color: #0294d4;
+}
+#navbar-stripe .color7 {
+  background-color: #0173ba;
+}
+#navbar-stripe .color8 {
+  background-color: #006699;
+}
+#navbar-stripe .color9 {
+  background-color: #993333;
+}
+#navbar-stripe .color10 {
+  background-color: #ff3333;
+}
+#navbar-stripe .color11 {
+  background-color: #ff9933;
+}
+#navbar-stripe .color12 {
+  background-color: #ffcc31;
+}
+
+#navbar-title {
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#navbar-profile {
+  border-radius: 50%;
+  width: 37px;
+}

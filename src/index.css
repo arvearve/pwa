@@ -1,0 +1,61 @@
+@import "./pages/accounts/accounts.css";
+@import "./modals/modal.css";
+
+.hide-until-load {
+  opacity: 1 !important;
+}
+
+.btn {
+  margin: 0 15px;
+  color: white;
+  text-transform: uppercase;
+  padding: 12px 12px;
+  border-radius: 2px;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+}
+
+.btn-orange {
+  background-color: var(--orange);
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.debit {
+  color: var(--orange);
+}
+.credit {
+  color: var(--light-blue);
+}
+
+#update-available {
+  width: 7px;
+  height: 7px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 28px;
+}
+
+.separator {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border-top: 0.7px solid var(--lighter-gray);
+  height: 1px;
+}

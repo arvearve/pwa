@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Workshop Push Helper</title>
+    <style>
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        #message {
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 20px;
+        }
+
+        #submit {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Push Helper</h1>
+
+        <form id="form">
+            <textarea placeholder="Push subscription" id="subscription"></textarea>
+            <div>
+                <input type="text" id="message" placeholder="Message">
+            </div>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        document.querySelector("#form").addEventListener("submit", (event) => {
+            event.preventDefault();
+            const subscription = document.querySelector("#subscription").value;
+            const message = document.querySelector("#message").value;
+
+            fetch("/api/push", {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    subscription: JSON.parse(subscription),
+                    data: message
+                })
+            }).then(console.log).catch(console.info)
+        });
+    </script>
+
+</body>
+
+</html>

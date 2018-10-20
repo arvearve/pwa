@@ -1,0 +1,18 @@
+#screens {
+  padding: 20px 0;
+  height: 100vh;
+  padding-top: 67px;
+  padding-bottom: 64px;
+  display: flex;
+  will-change: scroll-position;
+  overflow-x: hidden;
+}
+
+#screens .screen {
+  flex: 0 0 100vw;
+  padding-top: 22px;
+  overflow-y: auto;
+  height: 100%;
+  position: relative; /*every screen is relative*/
+  -webkit-overflow-scrolling: touch; /* iOs scrolling */
+}

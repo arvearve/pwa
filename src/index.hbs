@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Big Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="{{asset htmlWebpackPlugin.files.css 'main'}}" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="{{asset htmlWebpackPlugin.files.css 'main'}}">
+    </noscript>
+   
+    <!-- inlined app shell CSS -->
+    <style>{{{inlinecss compilation.assets htmlWebpackPlugin.files}}}</style>
+</head>
+
+<body>
+    {{> partials/navbar}}
+
+
+    <div id="screens">
+        <div class="screen" id="screen-accounts">
+            {{> pages/accounts/accounts }}
+        </div>
+        <div class="screen" id="screen-events">
+            {{> pages/events/events }}
+        </div>
+        <div class="screen" id="screen-cards">
+            <div class="container">
+                <h2>Cards</h2>
+            </div>
+        </div>
+        <div class="screen" id="screen-qr">
+            {{> pages/qr/qr }}
+        </div>
+        <div class="screen" id="screen-together">
+            {{> pages/together/together }}
+        </div>
+    </div>
+
+
+    {{> partials/tabs}}
+
+    {{!-- inlined app shell JS --}}
+    <script>{{{inlinejs compilation.assets htmlWebpackPlugin.files}}}</script>
+    <script async defer src="{{asset htmlWebpackPlugin.files.js 'main'}}"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.no-select {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.hide-until-load {
+  opacity: 0;
+  transition: opacity 150ms;
+}

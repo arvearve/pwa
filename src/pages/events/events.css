@@ -1,0 +1,34 @@
+.event-date {
+  text-transform: capitalize;
+}
+#events .container:first-child .event-date {
+  margin-top: 0;
+}
+
+.event-card {
+  background-color: var(--card-bg);
+  transition: background-color 150ms;
+  padding: 15px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.event-details {
+  padding-left: 15px;
+  flex-grow: 1;
+}
+
+.event-title {
+  font-size: 16px;
+}
+.event-description {
+  font-size: 12px;
+  color: var(--darker-gray);
+  padding-top: 5px;
+}
+.event-amount {
+  font-size: 18px;
+  font-weight: 300;
+}

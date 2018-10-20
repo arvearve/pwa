@@ -1,0 +1,39 @@
+#tabs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  background-color: var(--tabs-bg);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 14px;
+  color: var(--light-gray);
+  z-index: var(--apps-shell-zindex);
+  box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.05);
+}
+.tab {
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative; /*allow relative > absolute usage in tab*/
+}
+.tab .tab-title {
+  transform: scale(0.95);
+  will-change: transform;
+  transition: transform 160ms ease-in;
+}
+
+.tab.active {
+  color: var(--blue);
+  transform: scale(1);
+}
+.tab.active svg {
+  fill: var(--blue);
+}
+.tab.active .tab-title {
+  transform: scale(1);
+}
+
+.tab-card {
+  transform: rotateZ(90deg);
+}
